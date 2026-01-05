@@ -11,56 +11,72 @@
 body{background:#e8efe9;}
 .card{border-radius:18px;}
 input,textarea,select{border-radius:10px;}
+
+/* Menata logo di samping judul */
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle; /* Menjaga logo sejajar dengan teks */
+}
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 </style>
 </head>
 
 <body class="container py-4">
 
-<h3 class="text-center mb-3">FORM PENDAFTARAN ANGGOTA HDS</h3>
+<!-- Judul dengan Logo di samping -->
+<h3 class="text-center mb-3">
+  <img src="https://i.postimg.cc/nVPZvYkg/0bf4c1dc-27bd-4f91-8efd-cbbead4e2b20.webp" alt="Logo" class="logo"> FORM PENDAFTARAN
+</h3>
 
 <div class="card p-3 shadow-sm">
-<form id="form">
+  <form id="form">
 
-<input type="file" id="foto" class="form-control mb-2" accept="image/*" required>
+    <input type="file" id="foto" class="form-control mb-2" accept="image/*" required>
 
-<input class="form-control mb-2" placeholder="Nama Lengkap" id="nama" required>
-<input class="form-control mb-2" placeholder="No Telepon" id="telp" required>
-<input class="form-control mb-2" placeholder="Email" id="email" type="email" required>
+    <input class="form-control mb-2" placeholder="Nama Lengkap" id="nama" required>
+    <input class="form-control mb-2" placeholder="No Telepon" id="telp" required>
+    <input class="form-control mb-2" placeholder="Email" id="email" type="email" required>
 
-<!-- ASAL KAMPUNG -->
-<select class="form-control mb-2" id="asal" required>
-  <option value="">-- Pilih Asal Kampung --</option>
-</select>
+    <!-- ASAL KAMPUNG -->
+    <select class="form-control mb-2" id="asal" required>
+      <option value="">-- Pilih Asal Kampung --</option>
+    </select>
 
-<textarea class="form-control mb-2" placeholder="Tanggal Bergabung" id="tanggal" required></textarea>
-<textarea class="form-control mb-2" placeholder="Alasan Bergabung" id="alasan" required></textarea>
-<textarea class="form-control mb-2" placeholder="Minat & Bakat" id="minat" required></textarea>
-<textarea class="form-control mb-2" placeholder="Motivasi" id="motivasi" required></textarea>
-<textarea class="form-control mb-2" placeholder="Harapan" id="harapan" required></textarea>
+    <textarea class="form-control mb-2" placeholder="Tanggal Bergabung" id="tanggal" required></textarea>
+    <textarea class="form-control mb-2" placeholder="Alasan Bergabung" id="alasan" required></textarea>
+    <textarea class="form-control mb-2" placeholder="Minat & Bakat" id="minat" required></textarea>
+    <textarea class="form-control mb-2" placeholder="Motivasi" id="motivasi" required></textarea>
+    <textarea class="form-control mb-2" placeholder="Harapan" id="harapan" required></textarea>
 
-<select class="form-control mb-2" id="bagian" required>
-  <option value="">-- Pilih Bagian --</option>
-  <option>Ketua</option>
-  <option>Sekretaris</option>
-  <option>Bendahara</option>
-  <option>Rohani</option>
-  <option>Kebudayaan</option>
-  <option>Sosial</option>
-  <option>Pendidikan</option>
-  <option>Kewirausahaan</option>
-  <option>Koordinator Kampung</option>
-  <option>Lainnya</option>
-</select>
+    <select class="form-control mb-2" id="bagian" required>
+      <option value="">-- Pilih Bagian --</option>
+      <option>Ketua</option>
+      <option>Sekretaris</option>
+      <option>Bendahara</option>
+      <option>Rohani</option>
+      <option>Kebudayaan</option>
+      <option>Sosial</option>
+      <option>Pendidikan</option>
+      <option>Kewirausahaan</option>
+      <option>Koordinator Kampung</option>
+      <option>Lainnya</option>
+    </select>
 
-<input class="form-control mb-2" placeholder="User ID" id="userid" required>
-<input class="form-control mb-2" placeholder="Password" type="password" id="password" required>
+    <input class="form-control mb-2" placeholder="User ID" id="userid" required>
+    <input class="form-control mb-2" placeholder="Password" type="password" id="password" required>
 
-<button class="btn btn-success w-100 mt-2">DAFTAR</button>
-</form>
+    <button class="btn btn-success w-100 mt-2">DAFTAR</button>
+  </form>
 </div>
 
 <div class="text-center mt-3">
-<a href="https://formportal-lab.github.io/data-peserta/" class="btn btn-outline-dark btn-sm">🔍 Lihat Data Peserta</a>
+  <a href="https://formportal-lab.github.io/data-peserta/" class="btn btn-outline-dark btn-sm">🔍 Lihat Data Peserta</a>
 </div>
 
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
